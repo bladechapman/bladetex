@@ -1,0 +1,18 @@
+
+
+% === COMMANDS ===
+
+%  \tab[width] -- tab a line by by a certain amount
+% width[0.5cm] -- the distance to tab the line by
+%
+% \tab Hello World, this is a short tab
+% \tab[1cm] Hello World, this is a longer tab
+%
+\newcommand\tab[1][0.5cm]{\hspace*{#1}}
+
+%  \textul{content} -- a more semantic definition of underline
+% content -- the content to underline
+%
+% \textul{Hello World}
+%
+\newcommand\textul[1]{\underline{#1}}
