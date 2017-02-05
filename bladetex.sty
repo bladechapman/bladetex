@@ -1,3 +1,5 @@
+ % === Required Packages ===
+\RequirePackage{mathtools}
 
 
 % === COMMANDS ===
@@ -16,3 +18,17 @@
 % \textul{Hello World}
 %
 \newcommand\textul[1]{\underline{#1}}
+
+%   \ceil{content} -- wraps math ceiling notation around content
+% content -- the content to wrap
+%
+% \ceil{n/2}
+%
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+
+%   floor{content} -- wraps math floor notation around content
+% content -- the content to wrap
+%
+% \floor{n/2}
+% 
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
