@@ -19,6 +19,13 @@
 %
 \newcommand\textul[1]{\underline{#1}}
 
+%  \figref{figlabel} -- a quick way to reference a figure
+% figlable -- the label of t he figure to reference
+%
+% \figref{my_figure_label}
+% Contributed by Brendan Moriarty
+\newcommand{\figref}[1] {Figure \ref{#1} [\pageref{#1}]}
+
 %   \ceil{content} -- wraps math ceiling notation around content
 % content -- the content to wrap
 %
@@ -30,5 +37,5 @@
 % content -- the content to wrap
 %
 % \floor{n/2}
-% 
+%
 \DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
